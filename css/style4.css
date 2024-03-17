@@ -1,0 +1,844 @@
+*
+{
+  scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background: white;
+    font-family: 'Lora', serif;
+  }
+  
+  header {
+    background: #ADD08B;
+    height: 120px;
+    border-bottom: 1px black solid;
+  }
+  
+  header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+  }
+  
+  header .logo-tekst {
+    margin: 40px;
+    font-family: 'Candal', serif;
+    font-size: 5vh;
+  }
+  
+  
+  header .logo-tekst a {
+    text-decoration: none;
+  }
+  
+  header .logo-tekst span {
+    color: #555152;
+    font-style: bold;
+    -webkit-text-stroke: 3px #555152;
+  }
+  
+  header ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  header ul li {
+    float: left;
+  }
+  
+  header ul li a {
+    text-decoration: none;
+    margin-top: 40px;
+    display: block;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1.2px;
+    background-color: #555152;
+    border-radius: 20px;
+    margin-right: 10px;
+  }
+  
+  header ul li a:hover {
+    background: lightgray;
+    transition: 0.5s;
+  }
+  
+  
+  header {
+    color: white;
+  }
+  
+  header ul li {
+    float: left;
+    position: relative;
+  }
+  
+  header ul li ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+  }
+  
+  header ul li:hover ul {
+    display: block;
+  }
+  
+  header ul li ul li {
+    width: 100%;
+    margin: 0;
+  }
+  
+  header ul li ul li a {
+    padding: 5px 10px;
+    font-size: 25px;
+    color: gray;
+    width: 90%;
+    background-color: white;
+    display: block;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 40px;
+  
+  }
+  
+  header ul li ul li a:hover {
+    background: lightgray;
+  }
+  .odjava
+  {
+    color:red;
+  }
+  header .meni-crtice {
+    display: none;
+  }
+  
+  
+  
+  /*SLIDER ZA OBJAVE*/
+  .slider-objave
+  {
+    position: relative;
+ 
+    margin-top: 300px;
+  
+   background: white;
+  }
+  .slider-objave .naslov-slider 
+  {
+    text-decoration: none;
+    text-align: center;
+    margin: 30px auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #555152;
+    font-style: bold;
+  }
+
+/*SLIDERI ZA OBJAVE PO SMJEROVIMA */
+
+  /*SLIDER ZA OBJAVE STROJARSTVO*/
+
+  .slider-objave .okvir-objava-strojari .objava .slika-objava
+  {
+    width: 100%;
+    height: 220px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  
+  .slider-objave .okvir-objava-strojari .objava .objava-opis .ime-autora
+  {
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    font-style: bold;
+  }
+  
+  .slider-objave .okvir-objava-strojari .objava .objava-opis a
+  {
+   
+    margin-left: 5px;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    color: #555152; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  .slider-objave .okvir-objava-strojari .objava .objava-opis a:hover
+  {
+   
+    color:#ADD08B
+  }
+  .slider-objave .okvir-objava-strojari .objava .objava-opis i
+  {
+    margin-left: 7px;
+  }
+  .slider-objave .okvir-objava-strojari
+  {
+    width: 70%;
+    height: 350px;
+    margin: 0px auto;
+  
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+  }
+  .slider-objave .okvir-objava-strojari .objava
+  {
+    width: 200px;
+    height: 350px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    border: 2px #555152 solid;
+    box-shadow: 1rem 1rem 1rem -1rem #555152;
+   
+  }
+
+
+  
+  /*STRELICE*/
+  .slider-objave .sljedeca-strojari
+  {
+    position: absolute;
+    top: 45%;
+    right: 120px;
+    font-size: 50px;
+  }
+  .slider-objave .prosla-strojari
+  {
+    position: absolute;
+    top:45%;
+    left: 120px;
+    font-size: 50px;
+  }
+  .slider-objave .sljedeca-strojari:hover
+  {
+   color: #ADD08B;
+    transform: perspective();
+    cursor: pointer;
+  }
+  .slider-objave .prosla-strojari:hover
+  {
+   color: #ADD08B;
+    transform: perspective();
+    cursor: pointer;
+  }
+  /*....STRELICE*/
+  /*.....SLIDER ZA OBJAVE STROJRSTVO*/
+  
+
+  /*SLIDER ZA OBJAVE RACUNALSTVO*/
+
+  .slider-objave .okvir-objava-racunalci .objava .slika-objava
+  {
+    width: 100%;
+    height: 220px;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+  }
+  
+  .slider-objave .okvir-objava-racunalci .objava .objava-opis .ime-autora
+  {
+    font-size: 60px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 5px;
+    font-style: bold;
+  }
+  
+  .slider-objave .okvir-objava-racunalci .objava .objava-opis a
+  {
+   
+    margin-left: 5px;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+    color: #555152; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+  }
+  .slider-objave .okvir-objava-racunalci .objava .objava-opis a:hover
+  {
+   
+    color:#ADD08B
+  }
+  .slider-objave .okvir-objava-racunalci .objava .objava-opis i
+  {
+    margin-left: 7px;
+  }
+  .slider-objave .okvir-objava-racunalci
+  {
+    width: 70%;
+    height: 350px;
+    margin: 0px auto;
+  
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+  }
+  .slider-objave .okvir-objava-racunalci .objava
+  {
+    width: 200px;
+    height: 350px;
+    margin: 0px 10px;
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    border: 2px #555152 solid;
+    box-shadow: 1rem 1rem 1rem -1rem #555152;
+   
+  }
+
+
+  
+  /*STRELICE*/
+  .slider-objave .sljedeca-racunalci
+  {
+    position: absolute;
+    top: 45%;
+    right: 120px;
+    font-size: 50px;
+  }
+  .slider-objave .prosla-racunalci
+  {
+    position: absolute;
+    top: 45%;
+    left: 120px;
+    font-size: 50px;
+  }
+  .slider-objave .sljedeca-racunalci:hover
+  {
+   color: #add6f9;
+    transform: perspective();
+    cursor: pointer;
+  }
+  .slider-objave .prosla-racunalci:hover
+  {
+   color: #add6f9;
+    transform: perspective();
+    cursor: pointer;
+  }
+  /*....STRELICE*/
+  /*.....SLIDER ZA OBJAVE RACUNALSTVO*/
+  
+
+ /*SLIDER ZA OBJAVE MEHATRONIKA*/
+
+ .slider-objave .okvir-objava-mehici .objava .slika-objava
+ {
+   width: 100%;
+   height: 220px;
+   border-top-right-radius: 4px;
+   border-top-left-radius: 4px;
+ }
+ 
+ .slider-objave .okvir-objava-mehici .objava .objava-opis .ime-autora
+ {
+   font-size: 60px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   margin-left: 5px;
+   font-style: bold;
+ }
+ 
+ .slider-objave .okvir-objava-mehici .objava .objava-opis a
+ {
+  
+   margin-left: 5px;
+   font-size: large;
+   text-align: center;
+   text-decoration: none;
+   color: #555152; 
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ }
+ .slider-objave .okvir-objava-mehici .objava .objava-opis a:hover
+ {
+  
+   color:#ADD08B
+ }
+ .slider-objave .okvir-objava-mehici .objava .objava-opis i
+ {
+   margin-left: 7px;
+ }
+ .slider-objave .okvir-objava-mehici
+ {
+   width: 70%;
+   height: 350px;
+   margin: 0px auto;
+ 
+   overflow: hidden;
+   padding: 10px 0px 10px 0px;
+ }
+ .slider-objave .okvir-objava-mehici .objava
+ {
+   width: 200px;
+   height: 350px;
+   margin: 0px 10px;
+   display: inline-block;
+   background: white;
+   border-radius: 5px;
+   border: 2px #555152 solid;
+   box-shadow: 1rem 1rem 1rem -1rem #555152;
+  
+ }
+
+
+ 
+ /*STRELICE*/
+ .slider-objave .sljedeca-mehici
+ {
+   position: absolute;
+   top: 45%;
+   right: 120px;
+   font-size: 50px;
+ }
+ .slider-objave .prosla-mehici
+ {
+   position: absolute;
+   top: 45%;
+   left: 120px;
+   font-size: 50px;
+ }
+ .slider-objave .sljedeca-mehici:hover
+ {
+  color: #ADD08B;
+   transform: perspective();
+   cursor: pointer;
+ }
+ .slider-objave .prosla-mehici:hover
+ {
+  color: #ADD08B;
+   transform: perspective();
+   cursor: pointer;
+ }
+ /*....STRELICE*/
+ /*.....SLIDER ZA OBJAVE MEHATORNIKA*/
+ 
+
+/*SLIDER ZA OBJAVE ELEKTROTHENIKA*/
+
+ .slider-objave .okvir-objava-elektrici .objava .slika-objava
+ {
+   width: 100%;
+   height: 220px;
+   border-top-right-radius: 4px;
+   border-top-left-radius: 4px;
+ }
+ 
+ .slider-objave .okvir-objava-elektrici .objava .objava-opis .ime-autora
+ {
+   font-size: 60px;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   margin-left: 5px;
+   font-style: bold;
+ }
+ 
+ .slider-objave .okvir-objava-elektrici .objava .objava-opis a
+ {
+  
+   margin-left: 5px;
+   font-size: large;
+   text-align: center;
+   text-decoration: none;
+   color: #555152; 
+   font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+ }
+ .slider-objave .okvir-objava-elektrici .objava .objava-opis a:hover
+ {
+  
+   color:#ADD08B
+ }
+ .slider-objave .okvir-objava-elektrici .objava .objava-opis i
+ {
+   margin-left: 7px;
+ }
+ .slider-objave .okvir-objava-elektrici
+ {
+   width: 70%;
+   height: 350px;
+   margin: 0px auto;
+ 
+   overflow: hidden;
+   padding: 10px 0px 10px 0px;
+ }
+ .slider-objave .okvir-objava-elektrici .objava
+ {
+   width: 200px;
+   height: 350px;
+   margin: 0px 10px;
+   display: inline-block;
+   background: white;
+   border-radius: 5px;
+   border: 2px #555152 solid;
+   box-shadow: 1rem 1rem 1rem -1rem #555152;
+  
+ }
+
+
+ 
+ /*STRELICE*/
+ .slider-objave .sljedeca-elektrici
+ {
+   position: absolute;
+   top: 45%;
+   right: 120px;
+   font-size: 50px;
+ }
+ .slider-objave .prosla-elektrici
+ {
+   position: absolute;
+   top: 45%;
+   left: 120px;
+   font-size: 50px;
+ }
+ .slider-objave .sljedeca-elektrici:hover
+ {
+  color: #add6f9;
+   transform: perspective();
+   cursor: pointer;
+ }
+ .slider-objave .prosla-elektrici:hover
+ {
+  color: #add6f9;
+   transform: perspective();
+   cursor: pointer;
+ }
+ /*....STRELICE*/
+ /*.....SLIDER ZA OBJAVE ELEKTROTHENIKA*/
+
+
+/*ZAGLAVLJE*/
+.zaglavlje
+{
+  border: 2px white solid;
+  background: #555152;
+  font-size: 20px;
+  height: 250px;
+  position: relative;
+  top: 50px;
+  color: white;
+}
+.zaglavlje img
+{
+  height: 110px;
+}
+.zaglavlje span
+{
+  -webkit-text-stroke: 1.2px;
+  color: #ADD08B;
+}
+.zaglavlje .dnozaglavlja
+{
+background:  #55515202;;
+color:  white;
+height: 70px;
+width: 100%;
+font-size: 15px;
+text-align: center;
+position: absolute;
+bottom: 0px;
+left: 0px;
+padding-top: 40px;
+}
+
+.zaglavlje a
+{
+  background-color: #ddefff;
+  color: black;
+  font-size: 30px;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.zaglavlje a:hover
+{
+  cursor: pointer;
+  background-color: #ADD08B;
+}
+.zaglavlje .zaglavlje-tekst
+{
+  height:220px;
+  display: flex;
+ 
+}
+.zaglavlje .zaglavlje-tekst .zaglavlje-sekcija
+{
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*...ZAGLAVLJE*/
+/*SEKCIJE SMJEROVA*/ 
+#racunalstvo
+{
+    width: 90%;
+    margin: 250px auto;
+    border: 3px solid #add6f9; 
+    padding-bottom: 5em;
+}
+#strojarstvo
+{
+    width: 90%;
+    margin: 250px auto;
+    margin-top: 170px;
+    border: 3px solid #ADD08B;
+    padding-bottom: 5em;
+}
+#mehatronika
+{
+    width: 90%;
+    margin: 250px auto;
+    border: 3px solid #ADD08B;
+    padding-bottom: 5em;
+}
+#elektrotehnika
+{
+    width: 90%;
+    margin: 250px auto;
+    border: 3px solid #add6f9;
+    padding-bottom: 5em;
+}
+
+
+  
+  /* RESPONZIVNOST ZA MOBITELE*/
+  @media only screen and (max-width:1142px)
+  {
+/*STRELICE*/
+  .slider-objave .sljedeca-strojari
+  {
+    position: absolute;
+    top: 50%;
+    right: 30PX;
+    font-size: 50px;
+  }
+  .slider-objave .prosla-strojari
+  {
+    position: absolute;
+    top:50%;
+    left: 30PX;
+    font-size: 50px;
+  }
+  .slider-objave .sljedeca-racunalci
+  {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 50px;
+  }
+  .slider-objave .prosla-racunalci
+  {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 50px;
+  }
+  .slider-objave .sljedeca-elektrici
+  {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 50px;
+  }
+  .slider-objave .prosla-elektrici
+  {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 50px;
+  }
+  .slider-objave .sljedeca-mehici
+  {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 50px;
+  }
+  .slider-objave .prosla-mehici
+  {
+    position: absolute;
+    top: 45%;
+    left: 30px;
+    font-size: 50px;
+  }
+
+  /*....STRELICE*/
+ 
+    header 
+    {
+      position: relative;
+    
+    }
+    header ul{
+      width: 100%;
+      background-color: #ADD08B;
+      max-height: 0px;
+      overflow: hidden;
+    
+    }
+    header ul li {
+      width: 100%;
+    }
+    header ul li ul {
+      position: static;
+      display: block;
+      width: 100%;
+      background: inherit;
+    }
+    header ul li ul li a {
+      padding: 5px 10px;
+      font-size: 25px;
+      width: 100%;
+      background-color:lightgray;
+      display: block;
+      text-align: left;
+      margin-top: 0;
+      margin-right: 40px;
+      color: #555152;
+      padding-left: 50px;
+      border-radius: 0px;
+    }
+    header .meni-crtice
+    {
+      display: block;
+      position: absolute;
+      right: 60px;
+      top: 42px;
+      font-size: 2.5em;
+      
+    }
+    
+    header .logo-tekst {
+      margin-top:  40px;
+      margin-left: 5px;
+      font-family: 'Candal', serif;
+      font-size: 4vh;
+    }
+    header ul li ul li a:hover {
+      background: #ddefff;
+    }
+    header ul li a {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      margin-top: 0px;
+      font-size: 30px;
+      color: white;
+      -webkit-text-stroke: 1.2px;
+      background-color: #555152;
+      border-radius: 0px;
+      margin-right: 10px;
+      width: 100%;
+    }
+   
+  .prikazi  
+  {
+      max-height: 500em;
+      
+    }
+    .slider-objave
+    {
+      position: relative;
+      top: 290px;
+      margin-top: 300px;
+    
+     background: white;
+    }
+  /*ZAGLAVLJE*/
+.zaglavlje
+{
+  border: 2px white solid;
+  background: #555152;
+  font-size: 10px;
+  height: 250px;
+  position: relative;
+  top: 50px;
+  color: white;
+}
+.zaglavlje img
+{
+  height: 40px;
+}
+.zaglavlje span
+{
+  -webkit-text-stroke: 1.2px;
+  color: #ADD08B;
+}
+.zaglavlje .dnozaglavlja
+{
+background:  #55515202;;
+color:  white;
+height: 70px;
+width: 100%;
+font-size: 15px;
+text-align: center;
+position: absolute;
+bottom: 0px;
+left: 0px;
+padding-top: 40px;
+}
+
+.zaglavlje a
+{
+  background-color: #ddefff;
+  color: black;
+  font-size: 10px;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.zaglavlje a:hover
+{
+  cursor: pointer;
+  background-color: #ADD08B;
+}
+.zaglavlje .zaglavlje-tekst
+{
+  height:220px;
+  display: flex;
+ 
+}
+.zaglavlje .zaglavlje-tekst .zaglavlje-sekcija
+{
+  flex: 12;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/*...ZAGLAVLJE*/
+
+
+
+/*OPIS*/
+.slider-objave .okvir-objava-strojari .objava .objava-opis 
+  {
+    font-size: 11px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2px;
+    font-style: bold;
+  }
+  .slider-objave .okvir-objava-racunalci .objava .objava-opis 
+  {
+    font-size: 11px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2px;
+    font-style: bold;
+  }
+  .slider-objave .okvir-objava-mehici .objava .objava-opis 
+  {
+    font-size: 11px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2px;
+    font-style: bold;
+  }
+  .slider-objave .okvir-objava-elektrici .objava .objava-opis 
+  {
+    font-size: 11px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 2px;
+    font-style: bold;
+  }
+  }

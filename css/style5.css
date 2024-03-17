@@ -1,0 +1,402 @@
+* {
+  scroll-behavior: smooth;
+}
+p
+{
+  border: 1px solid #555152;
+  font-size: 25px;
+
+}
+section, html,body{
+  padding: 0;
+  margin: 0;
+  background: white;
+  font-family: 'Lora', serif;
+}
+
+header {
+  background: #9dd1ff;
+  height: 120px;
+  border-bottom: 1px black solid;
+}
+
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+
+header .logo-tekst {
+  margin: 40px;
+  font-family: 'Candal', serif;
+  font-size: 5vh;
+}
+
+header .logo-tekst a {
+  text-decoration: none;
+}
+
+header .logo-tekst span {
+  color: #555152;
+  font-style: bold;
+  -webkit-text-stroke: 3px #555152;
+}
+
+header ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  text-decoration: none;
+  margin-top: 40px;
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  color: white;
+  -webkit-text-stroke: 1.2px;
+  background-color: #555152;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+header ul li a:hover {
+  background: lightgray;
+  transition: 0.5s;
+}
+
+header {
+  color: white;
+}
+
+header ul li {
+  float: left;
+  position: relative;
+}
+
+header ul li ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  width: 100%;
+  margin: 0;
+}
+
+header ul li ul li a {
+  padding: 5px 10px;
+  font-size: 25px;
+  color: gray;
+  width: 100%;
+  background-color: white;
+  display: block;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 40px;
+}
+
+header ul li ul li a:hover {
+  background: lightgray;
+}
+
+.odjava {
+  color: red;
+}
+
+header .meni-crtice {
+  display: none;
+}
+
+/* ZAGLAVLJE */
+.zaglavlje {
+  border: 2px white solid;
+  background: #555152;
+  font-size: 20px;
+  height: 230px;
+  position: relative;
+  color: white;
+}
+
+.zaglavlje img {
+  height: 90px;
+}
+
+.zaglavlje span {
+  -webkit-text-stroke: 1.2px;
+  color: #ADD08B;
+}
+
+.zaglavlje .dnozaglavlja {
+  background: #55515202;
+  color: white;
+  height: 70px;
+  width: 100%;
+  font-size: 15px;
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 40px;
+}
+
+.zaglavlje a {
+  background-color: #ddefff;
+  color: black;
+  font-size: 30px;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+
+.zaglavlje a:hover {
+  cursor: pointer;
+  background-color: #ADD08B;
+}
+
+.zaglavlje .zaglavlje-tekst {
+  height: 220px;
+  display: flex;
+}
+
+.zaglavlje .zaglavlje-tekst .zaglavlje-sekcija {
+  flex: 1;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* ...ZAGLAVLJE */
+
+/*SLIDER*/
+.opis {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 5px;
+  flex: 1; 
+}
+
+.content-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex: 1; 
+}
+
+.slider {
+  margin-top: -20%;
+  margin-right: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.opis h1 {
+  font-size: 40px;
+  font-family:Arial, Helvetica, sans-serif;
+  text-decoration: dotted;
+  color: #555152;
+
+  text-decoration: dashed;
+}
+  
+.opis span {
+  color: #99b082;
+  font-size: 30px;
+  font-family: sans-serif;
+  text-decoration: none;
+
+}
+
+h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: bold;
+  color: #010101ae;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: bold;
+
+}
+
+.slider-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider img {
+  height: 450px;
+  width: 750px;
+  border: 3px solid #000000;
+}
+
+.tipkice {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+}
+
+.tipkice button {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  border: none;
+  background-color: #99b082;
+  color: white;
+  cursor: pointer;
+}
+
+.tipkice button:hover {
+  background-color: #9dd1ff;
+}
+
+/* RESPONZIVNOST ZA MOBITELE */
+@media only screen and (max-width:1239px) {
+
+  .content-container {
+    flex-direction: column;
+}
+
+  /*ZAGLAVLJE*/
+  .zaglavlje {
+      border: 2px white solid;
+      background: #555152;
+      font-size: 10px;
+      height: 250px;
+      position: relative;
+  
+      color: white;
+  }
+  .zaglavlje img {
+      height: 40px;
+  }
+  .zaglavlje span {
+      -webkit-text-stroke: 1.2px;
+      color: #ADD08B;
+  }
+  .zaglavlje .dnozaglavlja {
+      background:  #55515202;;
+      color:  white;
+      height: 70px;
+      width: 100%;
+      font-size: 15px;
+      text-align: center;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      padding-top: 40px;
+  }
+
+  .zaglavlje a {
+      background-color: #ddefff;
+      color: black;
+      font-size: 10px;
+      padding: 10px 10px;
+      text-decoration: none;
+  }
+  .zaglavlje a:hover {
+      cursor: pointer;
+      background-color: #ADD08B;
+  }
+  .zaglavlje .zaglavlje-tekst {
+      height:220px;
+      display: flex;
+  }
+  .zaglavlje .zaglavlje-tekst .zaglavlje-sekcija {
+      flex: 12;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+  }
+  /*...ZAGLAVLJE*/
+
+  header {
+      position: relative;
+  }
+  header ul {
+      width: 100%;
+      background-color: #ADD08B;
+      max-height: 0px;
+      overflow: hidden;
+  }
+  header ul li {
+      width: 100%;
+  }
+  header ul li ul {
+      position: static;
+      display: block;
+      width: 100%;
+      background: inherit;
+  }
+  header ul li ul li a {
+      padding: 5px 10px;
+      font-size: 25px;
+      width: 100%;
+      background-color:lightgray;
+      display: block;
+      text-align: left;
+      margin-top: 0;
+      margin-right: 40px;
+      color: #555152;
+      padding-left: 50px;
+      border-radius: 0px;
+  }
+  header .meni-crtice {
+      display: block;
+      position: absolute;
+      right: 40px;
+      top: 42px;
+      font-size: 2.5em;
+  }
+
+  header .logo-tekst {
+      margin-top:  40px;
+      margin-left: 5px;
+      font-family: 'Candal', serif;
+      font-size: 4vh;
+  }
+  header ul li ul li a:hover {
+      background: #ddefff;
+  }
+  header ul li a {
+      text-decoration: none;
+      display: block;
+      padding: 10px;
+      margin-top: 0px;
+      font-size: 30px;
+      color: white;
+      -webkit-text-stroke: 1.2px;
+      background-color: #555152;
+      border-radius: 0px;
+      margin-right: 10px;
+      width: 100%;
+  }
+
+  .prikazi {
+      max-height: 100em;
+  }
+}

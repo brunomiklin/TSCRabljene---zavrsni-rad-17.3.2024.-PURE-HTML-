@@ -1,0 +1,348 @@
+body {
+  height: 776px;
+  padding: 0;
+  margin: 0;
+
+}
+
+/*STRANICA I OKVIR STRANICE*/
+.glavni-okvir {
+  display: flex;
+  height: 100%;
+
+
+}
+
+
+
+#razred {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  border: lightgray solid 1px;
+}
+
+.glavni-okvir .lijevi-pokaznik {
+
+  flex: 2;
+  background: lightgray;
+  height: 110%;
+
+}
+
+.glavni-okvir .lijevi-pokaznik a {
+  color: #555152;
+  text-decoration: none;
+
+}
+
+.glavni-okvir .lijevi-pokaznik ul {
+
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.glavni-okvir .lijevi-pokaznik ul li a {
+  font-size: 20px;
+  padding: 20px;
+  display: block;
+  border-bottom: 1px solid #555152;
+}
+
+.glavni-okvir .lijevi-pokaznik ul li a:hover {
+  background-color: #ADD08B;
+
+
+}
+
+.glavni-okvir .admin-komande {
+
+  flex: 8;
+  height: 92%;
+  padding: 40px 100px 23px;
+  overflow-y: scroll;
+
+}
+
+.admin-komande .naziv-stranice {
+  font-size: 30px;
+  color: #555152b6;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: center;
+
+}
+
+/*TABLCA*/
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1.1rem;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: #ADD08B 1px solid;
+}
+
+
+/*//TABLCA*/
+
+
+/*TIPKICE*/
+.tipkice {
+  display: flex;
+  justify-content: left;
+  padding: 10px;
+}
+
+.tipkice a {
+  color: rgba(255, 255, 255, 0.686);
+  text-decoration: none;
+}
+
+.tipkice a:hover {
+  color: rgba(255, 255, 255, 0.409);
+}
+
+.tipkice button {
+
+  margin-right: 10px;
+  width: 104px;
+  height: 42px;
+  border: none;
+  background-color: #ADD08B;
+  align-items: center;
+  cursor: pointer;
+  justify-content: space-around;
+  color: white;
+}
+
+.obrisi {
+  color: red;
+  text-decoration: none;
+
+}
+
+.obrisi:hover {
+  text-decoration: underline;
+}
+
+.tipkice button:hover {
+  background-color: #555152;
+  color: rgba(255, 255, 255, 0.386);
+}
+
+/*TIPKICE*/
+
+/*//STRANICA I OKVIR STRANICE*/
+
+
+
+/*ZAGLAVLJE*/
+header {
+  background: #555152;
+  height: 140px;
+
+}
+
+header .logo {
+  float: left;
+  height: inherit;
+  margin-left: 2em;
+}
+
+header .logo-tekst {
+  margin-top: 40px;
+  font-family: 'Candal', serif;
+  font-size: 5vh;
+}
+
+
+header .logo-tekst a {
+  text-decoration: none;
+}
+
+header .logo-tekst span {
+  color: #ADD08B;
+  font-style: bold;
+  -webkit-text-stroke: 3px #ADD08B;
+}
+
+header ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+header ul li {
+  float: left;
+}
+
+header ul li a {
+  text-decoration: none;
+  margin-top: 40px;
+  display: block;
+  padding: 10px;
+  font-size: 30px;
+  color: #5551527b;
+  -webkit-text-stroke: 1.2px;
+  background-color: #ADD08B;
+  border-radius: 1%;
+  margin-right: 30px;
+}
+
+header ul li a:hover {
+  background: lightgray;
+  transition: 0.5s;
+}
+
+
+header {
+  color: white;
+}
+
+header ul li {
+  float: left;
+  position: relative;
+}
+
+header ul li ul {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: none;
+}
+
+header ul li:hover ul {
+  display: block;
+}
+
+header ul li ul li {
+  width: 100%;
+  margin: 0;
+}
+
+header ul li ul li a {
+  padding: 5px 10px;
+  font-size: 25px;
+  color: #ADD08B;
+  width: 90%;
+  background-color: white;
+  display: block;
+  text-align: left;
+  margin-top: 0;
+  margin-right: 40px;
+
+}
+
+header ul li ul li a:hover {
+  background: lightgray;
+}
+
+.odjava {
+  margin-left: -45.5%;
+  padding-left: 92px;
+  color: red;
+}
+
+header .meni-crtice {
+  display: none;
+}
+
+/*//ZAGLAVLJE*/
+
+
+
+
+
+
+
+/* RESPONZIVNOST ZA MOBITELE*/
+@media only screen and (max-width:1147px) {
+
+  header {
+    position: relative;
+
+  }
+
+  header ul {
+    width: 100%;
+    background-color: #ADD08B;
+    max-height: 0px;
+    overflow: hidden;
+
+  }
+
+  header ul li {
+    width: 100%;
+  }
+
+  header ul li ul {
+    position: static;
+    display: block;
+    width: 100%;
+    background: inherit;
+  }
+
+  header ul li ul li a {
+    padding: 5px 10px;
+    font-size: 25px;
+    width: 100%;
+    background-color: lightgray;
+    display: block;
+    text-align: left;
+    margin-top: 0;
+    margin-right: 40px;
+    color: #555152;
+    padding-left: 50px;
+    border-radius: 0px;
+  }
+
+  header .meni-crtice {
+    display: block;
+    position: absolute;
+    right: 40px;
+    top: 42px;
+    font-size: 2.5em;
+  }
+
+  header .logo-tekst {
+    margin-top: 40px;
+    margin-left: 5px;
+    font-family: 'Candal', serif;
+    font-size: 4vh;
+  }
+
+  header ul li ul li a:hover {
+    background: #ddefff;
+  }
+
+  header ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: white;
+    -webkit-text-stroke: 1.2px;
+    background-color: #555152;
+    border-radius: 0px;
+    margin-right: 10px;
+    width: 100%;
+  }
+
+  .odjava {
+    margin-left: -10%;
+    padding-left: 92px;
+    color: red;
+  }
+
+  .prikazi {
+    max-height: 100em;
+  }
+}

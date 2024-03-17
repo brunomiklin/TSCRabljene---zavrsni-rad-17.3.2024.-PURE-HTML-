@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.tscklogo
+{
+    transition: all 0.5s;
+}
+body {
+    background: #ddefff;
+}
+
+.glavni-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70vh;
+}
+
+.tscklogo {
+    margin-bottom: 20px; 
+}
+
+.okvir {
+    background: #b3ca9b;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.okvir-forma {
+    width: 450px;
+    margin: 0px 20px;
+}
+
+.okvir-forma header {
+    font-size: 25px;
+    font-weight: 600;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}
+
+.okvir-forma a {
+    color: #ddefff;
+}
+
+.okvir-forma a:hover {
+    color: black;
+}
+
+.okvir-forma form .unos {
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.okvir-forma form .unos input
+{
+height: 40px;
+width: 100%;
+font-size: 16px;
+padding: 0 20px;
+border-radius: 5px;
+border: 1px solid #e6e6e6;
+}
+
+.tipka
+{
+height: 35px;
+background: #555152;
+border: 0;
+border-radius: 5px;
+border: 1px solid #555152;
+color: white;
+font-size: 15px;
+cursor: pointer;
+transition: all 0.5s;
+margin-top: 10px;
+padding: 0px 10px;
+}
+
+@media only screen and (max-width: 882px) {
+    .glavni-div {
+        flex-direction: column;
+        text-align: center; 
+    }
+
+    .tscklogo {
+        margin-bottom: 0; 
+    }
+
+    .okvir-forma {
+        width: 90%; 
+    }
+}
+
